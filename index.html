@@ -13,6 +13,17 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script>
+		function copy(id) {
+			var TextRange = document.createRange();
+			TextRange.selectNode(document.getElementById(id));
+			sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(TextRange);
+			document.execCommand("copy");
+			alert("複製完成！")  //此行可加可不加
+		}
+	</script>
 </head>
 
 <body class="is-preload-0 is-preload-1 is-preload-2">
@@ -24,13 +35,17 @@
 		<header id="header">
 			<h2>如何購買</h2>
 			<ol class="content">
-				<li>挑選口味</li>
+				<li>點圖 查看口味與價格</li>
 				<li>撥打電話<a href="tel:0978067355" class="content2">點我撥打</a> or Line：&nbsp;dt0319</li>
-				<li>交易以面交為主，不便請見諒</li>
-				<li>工作時間為1 - 3天，請事先預購</li>
-				<li>賞味期限是五天可冰冰箱最多七天</li>
 			</ol>
-
+			<br>
+			<h2>Line格式</h2>
+			<div id="rule"><ol style="list-style-type:none;"><li>姓名：</li>
+					<li>品名：</li>
+					<li>連絡電話：</li>
+					<li>交貨日期：</li>
+					<li>面交地點：</li></ol></div>
+			<button onclick="copy('rule')">點擊複製格式</button>
 		</header>
 
 		<!-- Thumbnail -->
@@ -100,6 +115,9 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="copyright">
+				<p class="content">交易以面交為主，不便請見諒</p>
+				<p class="content">工作時間為1 - 3天，請事先預購</p>
+				<p class="content">賞味期限是五天可冰冰箱最多七天</p>
 				<p class="content">若買超過五盒(含)以上需先付款</p>
 				<p class="content">苑裡、日南、大甲可面交，其他市區需自付運費</p>
 				<p class="content">食用色素可放心食用</p>
