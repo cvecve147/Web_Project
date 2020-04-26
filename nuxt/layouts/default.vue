@@ -79,11 +79,13 @@
             <div class="ma-2">
               <a
                 class="mx-2"
+                target="_block"
                 href="https://www.facebook.com/%E8%8A%B3%E5%9A%AE%E6%A1%BF%E6%89%8B%E4%BD%9C%E5%9D%8A-113563920277515"
                 >FB連結</a
               >
               <a
                 href="https://www.instagram.com/handmade_0319/?hl=zh-tw"
+                target="_block"
                 class="mx-2"
                 >IG連結</a
               >
