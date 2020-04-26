@@ -70,10 +70,25 @@
               <li>面交地點：</li>
             </ul>
           </div>
-          <v-card-actions class="d-flex justify-end">
-            <v-btn color="primary" text @click="buy()">
-              複製商品與格式
-            </v-btn>
+          <v-card-actions class="d-flex justify-space-between ">
+            <div class="ma-2">
+              <v-btn color="primary" text @click="buy()">
+                複製商品與格式
+              </v-btn>
+            </div>
+            <div class="ma-2">
+              <a
+                class="mx-2"
+                href="https://www.facebook.com/%E8%8A%B3%E5%9A%AE%E6%A1%BF%E6%89%8B%E4%BD%9C%E5%9D%8A-113563920277515"
+                >FB連結</a
+              >
+              <a
+                href="https://www.instagram.com/handmade_0319/?hl=zh-tw"
+                class="mx-2"
+                >IG連結</a
+              >
+              <span>Line:dt0319</span>
+            </div>
           </v-card-actions>
         </v-card>
         <v-card v-else>
@@ -133,9 +148,7 @@ export default {
       var copyText = document.getElementById('copy')
       this.copyText(copyText)
       document.execCommand('copy')
-      alert('已將您購物車裡的商品複製，傳至line 或是fb 即可購買')
-
-      this.dialog3 = false
+      alert('已將您購物車裡的商品複製，傳至line、fb或是Ig 即可購買')
     },
     remove(val) {
       this.$store.commit('todos/remove', val)

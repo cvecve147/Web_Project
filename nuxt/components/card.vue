@@ -35,10 +35,16 @@
 
         <v-card-text class="text--primary pb-1">
           <div>
-            <span itemprop="price">{{ item.gsx$商品價格.$t }}</span
+            <span itemprop="price" class="title">{{
+              item.gsx$商品價格.$t
+            }}</span
             >/<span>{{ item.gsx$尺寸.$t }}</span>
           </div>
-          <div itemprop="description">{{ item.gsx$商品描述.$t }}</div>
+          <div
+            itemprop="description"
+            class="grey--text darken-4"
+            v-html="item.gsx$商品描述.$t"
+          ></div>
         </v-card-text>
 
         <v-card-actions class="d-flex justify-end">
