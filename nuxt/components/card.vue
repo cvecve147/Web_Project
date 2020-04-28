@@ -11,7 +11,8 @@
       itemscope
       itemtype="http://schema.org/Product"
     >
-      <v-card class="mx-auto" max-width="400">
+      <v-card class="mx-auto" max-width="400" 
+      v-if="item.gsx$商品名稱.$t!=''">
         <v-lazy
           transition="fade-transition"
           :options="{
