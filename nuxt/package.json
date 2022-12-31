@@ -18,14 +18,14 @@
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^7.0.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.12.2",
     "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.2.0",
+    "@nuxtjs/vuetify": "^1.12.3",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
